@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E79501A1B4BF3DD008C8E01 /* BaseTools.java in Sources */ = {isa = PBXBuildFile; fileRef = 2E7950191B4BF3DD008C8E01 /* BaseTools.java */; };
+		2E916B851B4AA7FA0001BF5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E916B841B4AA7FA0001BF5B /* main.m */; };
+		2E916B881B4AA7FA0001BF5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E916B871B4AA7FA0001BF5B /* AppDelegate.m */; };
+		2E916B8B1B4AA7FA0001BF5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E916B8A1B4AA7FA0001BF5B /* ViewController.m */; };
+		2E916B8E1B4AA7FA0001BF5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E916B8C1B4AA7FA0001BF5B /* Main.storyboard */; };
+		2E916B901B4AA7FA0001BF5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E916B8F1B4AA7FA0001BF5B /* Images.xcassets */; };
+		2E916B931B4AA7FA0001BF5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E916B911B4AA7FA0001BF5B /* LaunchScreen.xib */; };
+		2E916B9F1B4AA7FA0001BF5B /* J2ObjCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E916B9E1B4AA7FA0001BF5B /* J2ObjCDemoTests.m */; };
+		2E916BAA1B4AAA410001BF5B /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E916BA91B4AAA410001BF5B /* Config.xcconfig */; };
+		2E916BAD1B4AACAB0001BF5B /* Test.java in Sources */ = {isa = PBXBuildFile; fileRef = 2E916BAC1B4AAA9A0001BF5B /* Test.java */; };
+		2E916BB11B4AAF9D0001BF5B /* ApplicationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E916BB01B4AAF9D0001BF5B /* ApplicationTools.m */; };
+		2E916BB31B4AB4CF0001BF5B /* Other.java in Sources */ = {isa = PBXBuildFile; fileRef = 2E916BB21B4AB4CF0001BF5B /* Other.java */; };
+		2E916BB51B4AB70D0001BF5B /* MyInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = 2E916BB41B4AB70D0001BF5B /* MyInterface.java */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		2E916BAB1B4AAA5C0001BF5B /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.java;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILE_DIR)/${INPUT_FILE_BASE}.h",
+				"$(DERIVED_FILE_DIR)/${INPUT_FILE_BASE}.m",
+			);
+			script = "echo ${DERIVED_FILES_DIR}\nif [ ! -f \"${J2OBJC_HOME}/j2objc\" ]; then echo \"J2OBJC_HOME not correctly defined in Settings.xcconfig, currently set to '${J2OBJC_HOME}'\"; exit 1; fi;\n\"${J2OBJC_HOME}/j2objc\" -d ${DERIVED_FILES_DIR} -sourcepath \"${PROJECT_DIR}/J2ObjCDemo\" --no-package-directories -use-arc --prefix NTJava=NT -g  ${INPUT_FILE_PATH};";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		2E916B991B4AA7FA0001BF5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E916B771B4AA7FA0001BF5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E916B7E1B4AA7FA0001BF5B;
+			remoteInfo = J2ObjCDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E7950191B4BF3DD008C8E01 /* BaseTools.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = BaseTools.java; sourceTree = "<group>"; };
+		2E916B7F1B4AA7FA0001BF5B /* J2ObjCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = J2ObjCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E916B831B4AA7FA0001BF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E916B841B4AA7FA0001BF5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E916B861B4AA7FA0001BF5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2E916B871B4AA7FA0001BF5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2E916B891B4AA7FA0001BF5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2E916B8A1B4AA7FA0001BF5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2E916B8D1B4AA7FA0001BF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E916B8F1B4AA7FA0001BF5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E916B921B4AA7FA0001BF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2E916B981B4AA7FA0001BF5B /* J2ObjCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = J2ObjCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E916B9D1B4AA7FA0001BF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E916B9E1B4AA7FA0001BF5B /* J2ObjCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = J2ObjCDemoTests.m; sourceTree = "<group>"; };
+		2E916BA91B4AAA410001BF5B /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		2E916BAC1B4AAA9A0001BF5B /* Test.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Test.java; sourceTree = "<group>"; };
+		2E916BAF1B4AAF9D0001BF5B /* ApplicationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationTools.h; sourceTree = "<group>"; };
+		2E916BB01B4AAF9D0001BF5B /* ApplicationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationTools.m; sourceTree = "<group>"; };
+		2E916BB21B4AB4CF0001BF5B /* Other.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Other.java; sourceTree = "<group>"; };
+		2E916BB41B4AB70D0001BF5B /* MyInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = MyInterface.java; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E916B7C1B4AA7FA0001BF5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E916B951B4AA7FA0001BF5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E916B761B4AA7FA0001BF5B = {
+			isa = PBXGroup;
+			children = (
+				2E916B811B4AA7FA0001BF5B /* J2ObjCDemo */,
+				2E916B9B1B4AA7FA0001BF5B /* J2ObjCDemoTests */,
+				2E916B801B4AA7FA0001BF5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E916B801B4AA7FA0001BF5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E916B7F1B4AA7FA0001BF5B /* J2ObjCDemo.app */,
+				2E916B981B4AA7FA0001BF5B /* J2ObjCDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E916B811B4AA7FA0001BF5B /* J2ObjCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2E916BA91B4AAA410001BF5B /* Config.xcconfig */,
+				2E916BAE1B4AAF9D0001BF5B /* NTTools */,
+				2E916BA81B4AAA1F0001BF5B /* NTJava */,
+				2E916B861B4AA7FA0001BF5B /* AppDelegate.h */,
+				2E916B871B4AA7FA0001BF5B /* AppDelegate.m */,
+				2E916B891B4AA7FA0001BF5B /* ViewController.h */,
+				2E916B8A1B4AA7FA0001BF5B /* ViewController.m */,
+				2E916B8C1B4AA7FA0001BF5B /* Main.storyboard */,
+				2E916B8F1B4AA7FA0001BF5B /* Images.xcassets */,
+				2E916B911B4AA7FA0001BF5B /* LaunchScreen.xib */,
+				2E916B821B4AA7FA0001BF5B /* Supporting Files */,
+			);
+			path = J2ObjCDemo;
+			sourceTree = "<group>";
+		};
+		2E916B821B4AA7FA0001BF5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E916B831B4AA7FA0001BF5B /* Info.plist */,
+				2E916B841B4AA7FA0001BF5B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E916B9B1B4AA7FA0001BF5B /* J2ObjCDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E916B9E1B4AA7FA0001BF5B /* J2ObjCDemoTests.m */,
+				2E916B9C1B4AA7FA0001BF5B /* Supporting Files */,
+			);
+			path = J2ObjCDemoTests;
+			sourceTree = "<group>";
+		};
+		2E916B9C1B4AA7FA0001BF5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E916B9D1B4AA7FA0001BF5B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E916BA81B4AAA1F0001BF5B /* NTJava */ = {
+			isa = PBXGroup;
+			children = (
+				2E7950191B4BF3DD008C8E01 /* BaseTools.java */,
+				2E916BB41B4AB70D0001BF5B /* MyInterface.java */,
+				2E916BB21B4AB4CF0001BF5B /* Other.java */,
+				2E916BAC1B4AAA9A0001BF5B /* Test.java */,
+			);
+			path = NTJava;
+			sourceTree = "<group>";
+		};
+		2E916BAE1B4AAF9D0001BF5B /* NTTools */ = {
+			isa = PBXGroup;
+			children = (
+				2E916BAF1B4AAF9D0001BF5B /* ApplicationTools.h */,
+				2E916BB01B4AAF9D0001BF5B /* ApplicationTools.m */,
+			);
+			path = NTTools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E916B7E1B4AA7FA0001BF5B /* J2ObjCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E916BA21B4AA7FA0001BF5B /* Build configuration list for PBXNativeTarget "J2ObjCDemo" */;
+			buildPhases = (
+				2E916B7B1B4AA7FA0001BF5B /* Sources */,
+				2E916B7C1B4AA7FA0001BF5B /* Frameworks */,
+				2E916B7D1B4AA7FA0001BF5B /* Resources */,
+			);
+			buildRules = (
+				2E916BAB1B4AAA5C0001BF5B /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = J2ObjCDemo;
+			productName = J2ObjCDemo;
+			productReference = 2E916B7F1B4AA7FA0001BF5B /* J2ObjCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E916B971B4AA7FA0001BF5B /* J2ObjCDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E916BA51B4AA7FA0001BF5B /* Build configuration list for PBXNativeTarget "J2ObjCDemoTests" */;
+			buildPhases = (
+				2E916B941B4AA7FA0001BF5B /* Sources */,
+				2E916B951B4AA7FA0001BF5B /* Frameworks */,
+				2E916B961B4AA7FA0001BF5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E916B9A1B4AA7FA0001BF5B /* PBXTargetDependency */,
+			);
+			name = J2ObjCDemoTests;
+			productName = J2ObjCDemoTests;
+			productReference = 2E916B981B4AA7FA0001BF5B /* J2ObjCDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E916B771B4AA7FA0001BF5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = wangxiang;
+				TargetAttributes = {
+					2E916B7E1B4AA7FA0001BF5B = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					2E916B971B4AA7FA0001BF5B = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 2E916B7E1B4AA7FA0001BF5B;
+					};
+				};
+			};
+			buildConfigurationList = 2E916B7A1B4AA7FA0001BF5B /* Build configuration list for PBXProject "J2ObjCDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E916B761B4AA7FA0001BF5B;
+			productRefGroup = 2E916B801B4AA7FA0001BF5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E916B7E1B4AA7FA0001BF5B /* J2ObjCDemo */,
+				2E916B971B4AA7FA0001BF5B /* J2ObjCDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E916B7D1B4AA7FA0001BF5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E916BAA1B4AAA410001BF5B /* Config.xcconfig in Resources */,
+				2E916B8E1B4AA7FA0001BF5B /* Main.storyboard in Resources */,
+				2E916B931B4AA7FA0001BF5B /* LaunchScreen.xib in Resources */,
+				2E916B901B4AA7FA0001BF5B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E916B961B4AA7FA0001BF5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E916B7B1B4AA7FA0001BF5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E916BAD1B4AACAB0001BF5B /* Test.java in Sources */,
+				2E916BB11B4AAF9D0001BF5B /* ApplicationTools.m in Sources */,
+				2E916B8B1B4AA7FA0001BF5B /* ViewController.m in Sources */,
+				2E916BB51B4AB70D0001BF5B /* MyInterface.java in Sources */,
+				2E916B881B4AA7FA0001BF5B /* AppDelegate.m in Sources */,
+				2E916BB31B4AB4CF0001BF5B /* Other.java in Sources */,
+				2E79501A1B4BF3DD008C8E01 /* BaseTools.java in Sources */,
+				2E916B851B4AA7FA0001BF5B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E916B941B4AA7FA0001BF5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E916B9F1B4AA7FA0001BF5B /* J2ObjCDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E916B9A1B4AA7FA0001BF5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E916B7E1B4AA7FA0001BF5B /* J2ObjCDemo */;
+			targetProxy = 2E916B991B4AA7FA0001BF5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E916B8C1B4AA7FA0001BF5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E916B8D1B4AA7FA0001BF5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E916B911B4AA7FA0001BF5B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E916B921B4AA7FA0001BF5B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E916BA01B4AA7FA0001BF5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E916BA91B4AAA410001BF5B /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2E916BA11B4AA7FA0001BF5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E916BA91B4AAA410001BF5B /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E916BA31B4AA7FA0001BF5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = J2ObjCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E916BA41B4AA7FA0001BF5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = J2ObjCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2E916BA61B4AA7FA0001BF5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = J2ObjCDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/J2ObjCDemo.app/J2ObjCDemo";
+			};
+			name = Debug;
+		};
+		2E916BA71B4AA7FA0001BF5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = J2ObjCDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/J2ObjCDemo.app/J2ObjCDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E916B7A1B4AA7FA0001BF5B /* Build configuration list for PBXProject "J2ObjCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E916BA01B4AA7FA0001BF5B /* Debug */,
+				2E916BA11B4AA7FA0001BF5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E916BA21B4AA7FA0001BF5B /* Build configuration list for PBXNativeTarget "J2ObjCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E916BA31B4AA7FA0001BF5B /* Debug */,
+				2E916BA41B4AA7FA0001BF5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E916BA51B4AA7FA0001BF5B /* Build configuration list for PBXNativeTarget "J2ObjCDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E916BA61B4AA7FA0001BF5B /* Debug */,
+				2E916BA71B4AA7FA0001BF5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E916B771B4AA7FA0001BF5B /* Project object */;
+}

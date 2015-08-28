@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  J2ObjCDemo
+//
+//  Created by wangxiang on 15/7/6.
+//  Copyright (c) 2015年 wangxiang. All rights reserved.
+//
+
+J2OBJC_HOME = /usr/local/j2objc-0.9.7;
+HEADER_SEARCH_PATHS = $(inherited) "${DERIVED_FILES_DIR}" "${J2OBJC_HOME}/include" ;
+LIBRARY_SEARCH_PATHS = $(inherited) "${J2OBJC_HOME}/lib";
+OTHER_LDFLAGS = $(inherited) -l"z" -l"jre_emul" -l"icucore";
